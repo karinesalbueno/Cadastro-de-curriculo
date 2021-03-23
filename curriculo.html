@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<link rel="stylesheet" type="text/css" href="anexado.css">
+
+    <meta charset="utf-8">
+    <title>Cadastro de Curriculo </title>
+
+</head>
+<body>
+<div>
+   <h1 id="titulo"> Currículo</h1>
+<p id="subtitulo"><strong>Complete suas informações</p></strong>
+<br>
+</div>
+<form>
+	<fieldset class="grupo">
+		<div class="campo">
+			<label for="nome"><strong>Nome completo</label></strong>
+
+			<input type="text" name="nome" id="nome" required>
+		</div>
+		<div class="campo">
+	<strong><label for="email">Email</label></strong>
+	<input type="Email" name="email" id="email" required>
+</div>
+<div class="campo">
+	<label><strong>Telefone</label></strong>
+	<input type="text" name="frmNumero" id="numero" maxlength="11" required>
+</div>
+<div class="campo">
+			<strong><label>Endereço</label></strong>
+			<input type="text" name="Endereço" id="Endereço">
+		</div>
+	</fieldset>
+<div class="campo">
+	<strong><label>Estado civil:</label></strong>
+	<label>
+		<input type="radio" name="estadocivil" value="solteiro" checked>Solteiro(a)
+	</label>
+		<label>
+		<input type="radio" name="estadocivil" value="casado">Casado(a)
+	</label>
+		<label>
+		<input type="radio" name="estadocivil" value="divorciado">Divorciado(a)
+	</label>
+</div>
+<div class="campo">
+	<label><strong> Nível escolar</label></strong>
+	<select id="escolaridade">
+		<option>Ensino Fundamental completo</option>
+		<option>Ensino Fundamental incompleto</option>
+		<option>Ensino Médio completo</option>
+		<option>Ensino Médio incompleto</option>
+		<option>Ensino Superior completo</option>
+		<option>Ensino Superior cursando</option>
+		<option selected disabled value="">Selecione</option>
+	</select>
+</div>
+	<fieldset class="grupo">
+		<div class="campo">
+			<label><h4>Objetivo Prossional</h4></label>
+			<p>
+			<textarea row="6" style="width: 35em" id="resumo" name="resumo" ></textarea>
+		</div>
+	</fieldset>
+	<fieldset class="grupo">
+
+		<div class="prof"><label><h4>Experiencia Profissional</h4></label>
+			<label>Cargo</label>
+			<input type="text" name="cargo1" id="cargo1">
+			<label> Empresa</label>
+			<input type="text" name="Empresa" id="Empresa">
+			<p><label>Cargo</label>
+			<input type="text" name="cargo1" id="cargo1">
+			<label> Empresa</label>
+			<input type="text" name="Empresa" id="Empresa">
+		</div>
+		<div class="prof"><label><h4>Cursos</h4></label>
+			<label>Curso</label>
+			<input type="text" name="cargo1" id="cargo1">
+			<label> Instituiçao</label>
+			<input type="text" name="Empresa" id="Empresa">
+			<p><label>Curso</label>
+			<input type="text" name="cargo1" id="cargo1">
+			<label> Instituiçao</label>
+			<input type="text" name="Empresa" id="Empresa">
+		</div>
+
+		<div id="check">
+			<label><h4>Conhecimentos</label></h4>
+
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="Excel">
+			<label for= "tecnologia">Excel</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="Java">
+			<label for= "tecnologia">Java</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="JavaScript">
+			<label for= "tecnologia">JavaScript</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="C#">
+			<label for= "tecnologia">C#</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="C++">
+			<label for= "tecnologia">C++</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="Phyton">
+			<label for= "tecnologia">Phyton</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="Power bi">
+			<label for= "tecnologia">Power bi</label>
+			<input type="checkbox" id="tecnologia" name="tecnologia" value="SQL">
+			<label for= "tecnologia">SQL</label>
+		</div>
+		<button class ="botao" type="submit"  onsubmit="">Concluído</button>
+	</fieldset>
+
+	
+</form>
+
+</body>
+</html>
